@@ -40,6 +40,8 @@ case $STAGE in
   ;;
 esac
 
+tar Oxzf package.tgz cleanup | bash
+
 whiptail --title "1NTERRUPT CTF" --msgbox "The system will now reboot" 7 30 
 
 reboot
